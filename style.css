@@ -193,13 +193,14 @@ text-align: center;
         gap: 10px;
     }
 .footer__contenter{
-     display: flex;
-     position: absolute;
+    display: flex;
+    position: absolute;
     top: 2650px;
-     right: 10%;
-    gap: 30px;
-    
+    right: 10%;
+
 }
+
+  
 }
 .section2__container div{
     display: flex;
@@ -278,6 +279,70 @@ line-height: 18px;
 letter-spacing: 0px;
 text-align: left;
 text-decoration: none;
+}
+    .footer__container{
+        display: flex;
+    }
+    .footer__content nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer__content{
+        display: flex;
+        flex-direction:row ;
+    }
+    .footer__contenter{
+        position: absolute;
+        right: 10%;
+        top: 2240px;
+        display: flex;
+        gap: 30px;
+        margin-left: 100px;
+    }
+    .section2__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .section2__container div h1{
+        color: rgb(54, 83, 107);
+font-family: DM Serif Display;
+font-size: 48px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: -0.37px;
+text-align: left;
+margin-top: 120px;
+    }
+    .section2__container div p{
+        color: rgb(108, 130, 148);
+font-family: Public Sans;
+font-size: 15px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+    }
+
+    .footer{
+        margin-bottom: -1000px;
+    }
+@media (max-width:768px) {
+    .section2__container{
+        flex-direction: column;
+    }
+    .section2__container div h1{
+        margin: 0 auto;
+    }
+    .section2__container div p{
+        color: rgb(108, 130, 148);
+font-family: Public Sans;
+font-size: 15px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: center;
+    }        
 }
 @media (max-width:376px) {
     body{
@@ -472,3 +537,20 @@ text-align: center;
             height: 400px;
         }
     }
+@media (max-width:768px) {
+    .footer__contenter{
+        position: absolute;
+        top: 2770px;
+    }
+    .footer__container{
+        flex-direction: column;
+        margin-left: -30px;
+    }
+    .footer__content{
+        flex-direction: column;
+    }
+    .footer__contenter{
+        position: absolute;
+        top: 3500px;
+    }
+}
